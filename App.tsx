@@ -1,5 +1,5 @@
 import { StatusBar } from "react-native";
-import { NewGroup } from "@screens/NewGroup";
+import { Players } from "@screens/Players";
 import theme from "./src/theme/index";
 import { ThemeProvider } from "styled-components";
 import {
@@ -19,7 +19,7 @@ export default function App() {
         backgroundColor={"transparent"}
         translucent
       />
-      {fontsLoad ? <NewGroup /> : <Loading />}
+      {fontsLoad ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
